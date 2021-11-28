@@ -1,0 +1,66 @@
+.name {
+    
+    text-align: center;
+    color: cadetblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    animation-name: heading;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes heading {
+
+    100% {
+      transform: scale(2.5,2.5);
+    }
+    
+  }
+
+
+  .outer-circle{
+
+    width: 150px;
+    height: 150px;
+    background-color: pink;
+    border-radius: 50%;
+    margin-top: 50px;
+    animation-name: circle-animation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    
+  }
+
+  .outer-circle:hover {
+    animation-play-state: paused;
+    background-color: darkred;
+  }
+
+  @keyframes circle-animation {
+       
+    25% { transform: translate(250px,250px)}
+    50% { transform: translate(450px,0px)}
+    75% { transform: translate(700px,250px)} 
+    100% { transform: translate(900px,0px)} 
+    
+  }
+
+  .inner-circle{
+    width: 30px;
+    height: 30px;
+    background-color: darkblue;
+    border-radius: 50%;
+    margin: auto;
+    animation-name: circle;
+    
+
+  }
+
+
+  .inner-circle:hover {
+    animation-play-state: paused;
+    background-color: greenyellow;
+  }
+
+  
